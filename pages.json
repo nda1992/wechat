@@ -1,0 +1,82 @@
+{
+	"easycom": {
+	        // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+	        // 下载安装方式
+	        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	        // npm安装方式
+	        // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,	{
+            "path" : "pages/data/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "数据展示",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/home/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/manager/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "内容管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor":"#FFFFFF",
+		"list": [
+			{
+			"pagePath":"pages/index/index",
+			"iconPath":"static/images/tabBar/index.png",
+			"selectedIconPath":"static/images/tabBar/index_full.png",
+			"text":"首页"
+			},
+			{
+			"pagePath":"pages/manager/index",
+			"iconPath":"static/images/tabBar/manager.png",
+			"selectedIconPath":"static/images/tabBar/manager_full.png",
+			"text":"内容管理"
+			},
+			{
+			"pagePath":"pages/data/index",
+			"iconPath":"static/images/tabBar/data.png",
+			"selectedIconPath":"static/images/tabBar/data_full.png",
+			"text":"数据展示"
+			},
+			{
+			"pagePath":"pages/home/index",
+			"iconPath":"static/images/tabBar/home.png",
+			"selectedIconPath":"static/images/tabBar/home_full.png",
+			"text":"个人中心"
+			}
+			]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "微信小程序",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
