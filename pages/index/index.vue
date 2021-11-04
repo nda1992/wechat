@@ -4,6 +4,7 @@
 		<view class="index-swiper">
 			<u-swiper :list="list" :effect3d="true" title @click='goto' mode="rect"></u-swiper>
 		</view>
+		<u-notice-bar mode="horizontal" :list="text" color="#006e54"></u-notice-bar>
 		<view class="index-content">
 			<view class="index-content-header">
 				<view class="index-content-header-list" @click="openListDraw">
@@ -39,6 +40,7 @@
 	export default {
 		data() {
 			return {
+				text: ['挂号请关注《南华大学附属第一医院公众号》进行操作...'],
 				list: [{
 								image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
 								title: '昨夜星辰昨夜风，画楼西畔桂堂东',
