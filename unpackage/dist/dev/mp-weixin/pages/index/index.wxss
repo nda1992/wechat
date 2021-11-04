@@ -24,7 +24,20 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.index-container .index-swiper.data-v-57280228 {
-  color: #2979ff;
+.index-container .index-content.data-v-57280228 {
+  padding: 20rpx;
+}
+.index-container .index-content .index-content-header.data-v-57280228 {
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.index-container .index-content .index-content-header .index-content-header-list image.data-v-57280228 {
+  width: 50rpx;
+  height: 50rpx;
+}
+.index-container .index-content .index-content-header .index-content-header-time.data-v-57280228 {
+  color: #999999;
 }
 

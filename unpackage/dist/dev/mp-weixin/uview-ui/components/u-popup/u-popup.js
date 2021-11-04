@@ -1,46 +1,5 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["uview-ui/components/u-popup/u-popup"],{
 
-/***/ 76:
-/*!************************************************************************!*\
-  !*** D:/lunwen/re_nhfy/wechat/uview-ui/components/u-popup/u-popup.vue ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./u-popup.vue?vue&type=template&id=17becaea&scoped=true& */ 77);
-/* harmony import */ var _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./u-popup.vue?vue&type=script&lang=js& */ 79);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _u_popup_vue_vue_type_style_index_0_id_17becaea_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./u-popup.vue?vue&type=style&index=0&id=17becaea&scoped=true&lang=scss& */ 81);
-/* harmony import */ var _software_hbuilder_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../software/hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
-
-var renderjs
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_software_hbuilder_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "17becaea",
-  null,
-  false,
-  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
-  renderjs
-)
-
-component.options.__file = "uview-ui/components/u-popup/u-popup.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
 /***/ 77:
 /*!*******************************************************************************************************************!*\
   !*** D:/lunwen/re_nhfy/wechat/uview-ui/components/u-popup/u-popup.vue?vue&type=template&id=17becaea&scoped=true& ***!
@@ -527,6 +486,47 @@ __webpack_require__.r(__webpack_exports__);
     if(false) { var cssReload; }
   
 
+/***/ }),
+
+/***/ 97:
+/*!************************************************************************!*\
+  !*** D:/lunwen/re_nhfy/wechat/uview-ui/components/u-popup/u-popup.vue ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./u-popup.vue?vue&type=template&id=17becaea&scoped=true& */ 77);
+/* harmony import */ var _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./u-popup.vue?vue&type=script&lang=js& */ 79);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _u_popup_vue_vue_type_style_index_0_id_17becaea_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./u-popup.vue?vue&type=style&index=0&id=17becaea&scoped=true&lang=scss& */ 81);
+/* harmony import */ var _software_hbuilder_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../software/hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js */ 11);
+
+var renderjs
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_software_hbuilder_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _u_popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "17becaea",
+  null,
+  false,
+  _u_popup_vue_vue_type_template_id_17becaea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["components"],
+  renderjs
+)
+
+component.options.__file = "uview-ui/components/u-popup/u-popup.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
 /***/ })
 
 }]);
@@ -535,7 +535,7 @@ __webpack_require__.r(__webpack_exports__);
     'uview-ui/components/u-popup/u-popup-create-component',
     {
         'uview-ui/components/u-popup/u-popup-create-component':(function(module, exports, __webpack_require__){
-            __webpack_require__('1')['createComponent'](__webpack_require__(76))
+            __webpack_require__('1')['createComponent'](__webpack_require__(97))
         })
     },
     [['uview-ui/components/u-popup/u-popup-create-component']]
