@@ -9,8 +9,8 @@
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "微信小程序",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#006e54",
+    "backgroundColor": "#006e54"
   },
   "tabBar": {
     "color": "#000000",

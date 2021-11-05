@@ -1,0 +1,1 @@
+<view class="basicData-container data-v-765cda4d"><view class="basicData-box data-v-765cda4d"><text class="data-v-765cda4d">{{showData.name}}</text><text class="data-v-765cda4d">{{showData.value}}</text></view></view>
