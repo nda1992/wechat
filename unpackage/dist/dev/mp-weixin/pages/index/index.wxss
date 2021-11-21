@@ -1,3 +1,9 @@
+
+.u-list-image-wrap {
+	width: 100% !important;
+	height: 100% !important;
+}
+
 @charset "UTF-8";
 /**
  * 这里是uni-app内置的常用样式变量
@@ -30,7 +36,7 @@
 .index-container .index-content .index-content-header.data-v-57280228 {
   font-size: 25rpx;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .index-container .index-content .index-content-header .index-content-header-list image.data-v-57280228 {

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cube": "/components/buttons/cube"
+  }
+}

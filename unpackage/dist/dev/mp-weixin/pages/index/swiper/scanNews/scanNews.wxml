@@ -1,0 +1,1 @@
+<view class="data-v-1fda17a4"><news vue-id="124c1298-1" item="{{newsItem}}" class="data-v-1fda17a4" bind:__l="__l"></news><view class="btn data-v-1fda17a4"><u-button vue-id="124c1298-2" type="info" size="mini" data-event-opts="{{[['^click',[['back']]]]}}" bind:click="__e" class="data-v-1fda17a4" bind:__l="__l" vue-slots="{{['default']}}">返回</u-button></view></view>
