@@ -23,7 +23,7 @@
 			</view>
 			<u-divider :half-width='350' :margin-top="10" :margin-bottom="10">热点新闻</u-divider>
 			<view class="index-content-news">
-				
+				<news />
 			</view>
 		</view>
 		<view class="draw">
@@ -37,7 +37,11 @@
 <script>
 import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
+import news from '@/components/news/news.vue'
 export default {
+	components: {
+		news
+	},
 	data() {
 		return {
 			text: ['挂号请关注《南华大学附属第一医院公众号》进行操作...'],

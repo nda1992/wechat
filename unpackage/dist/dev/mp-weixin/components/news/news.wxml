@@ -1,0 +1,1 @@
+<view><block wx:for="{{newsList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><news-box vue-id="{{'b2b829bc-1-'+__i0__}}" newsItem="{{item.item}}" bind:__l="__l"></news-box></block></view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "news-box": "/components/news/newsBox/index"
+  }
+}
