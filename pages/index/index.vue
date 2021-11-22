@@ -23,7 +23,7 @@
 			</view>
 			<u-divider :half-width='350' :margin-top="10" :margin-bottom="10">热点新闻</u-divider>
 			<view class="index-content-news">
-				
+				<news />
 			</view>
 		</view>
 		<view class="index-draw">
@@ -39,13 +39,24 @@
 <script>
 import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
+<<<<<<< HEAD
+import news from '@/components/news/news.vue'
+export default {
+	components: {
+		news
+=======
 import index from '@/components/buttons/index.vue'
 import popupItem from '@/components/popupItem/popupItem.vue'
 import tuiDrawer from "@/components/thorui/tui-drawer"
 export default {
 	components:{
+<<<<<<< HEAD
 		index,
 		popupItem
+=======
+		index
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
+>>>>>>> e59107ab24bb084c9c4e5bcf5c73ee5e59f86299
 	},
 	data() {
 		return {

@@ -1,4 +1,8 @@
 <template>
+<<<<<<< HEAD
+	<view>
+		<newsBox v-for="item in newsList" :key="item.id" :newsItem="item.item" />
+=======
 	<!-- 浏览新闻的组件 -->
 	<view>
 		<view class="news-main">
@@ -12,10 +16,52 @@
 				<u-parse :html="item.content"></u-parse>
 			</view>
 		</view>
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 	</view>
 </template>
 
 <script>
+<<<<<<< HEAD
+import newsBox from '@/components/news/newsBox/index.vue'
+export default {
+	name:"news",
+	components: {
+		newsBox
+	},
+	data() {
+		return {
+			listQuery: {
+				limit: 10,
+				page: 1,
+				role: 'admin'
+			}
+		}
+	},
+	onLoad() {
+		this.getnewsList()
+	},
+	methods: {
+		getnewsList() {
+			const that = this
+			uni.request({
+				url: 'http://localhost:3000/news/getnewsList',
+				method: 'GET',
+				header: {token: 'token'},
+				data: that.listQuery,
+				success(res) {
+					const { items, page } = res.data
+					console.log(items);
+					console.log(page); 
+				}
+			})
+		}
+	}
+}
+</script>
+
+<style>
+
+=======
 	export default {
 		name:"news",
 		props: {
@@ -50,4 +96,5 @@
 			padding: 0 35rpx;
 		}
 	}
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 </style>
