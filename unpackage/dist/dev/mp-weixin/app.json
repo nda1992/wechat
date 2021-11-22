@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/data/index",
     "pages/home/index",
-    "pages/manager/index"
+    "pages/manager/index",
+    "pages/index/swiper/scanNews/scanNews"
   ],
   "subPackages": [],
   "window": {
@@ -45,5 +46,9 @@
     ]
   },
   "usingComponents": {},
+<<<<<<< HEAD
   "sitemapLocation": "sitemap27.json"
+=======
+  "sitemapLocation": "sitemap51.json"
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 }

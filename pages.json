@@ -40,6 +40,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/index/swiper/scanNews/scanNews",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新闻内容",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color": "#000000",

@@ -4,8 +4,13 @@
     "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
     "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
     "u-divider": "/uview-ui/components/u-divider/u-divider",
+<<<<<<< HEAD
     "u-button": "/uview-ui/components/u-button/u-button",
     "news": "/components/news/news",
     "u-popup": "/uview-ui/components/u-popup/u-popup"
+=======
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "index": "/components/buttons/index"
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
   }
 }

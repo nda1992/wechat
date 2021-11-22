@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "component": true,
   "usingComponents": {
     "news-box": "/components/news/newsBox/index"
   }
+=======
+  "usingComponents": {
+    "u-parse": "/uview-ui/components/u-parse/u-parse"
+  },
+  "component": true
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 }

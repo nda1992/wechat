@@ -1,0 +1,1 @@
+<view class="cube data-v-7f178f3e"><view data-event-opts="{{[['tap',[['gotoTargePage',['$0','$1'],['index','content']]]]]}}" class="cube-main data-v-7f178f3e" bindtap="__e"><view class="cube-main-children data-v-7f178f3e"><image src="{{icon}}" class="data-v-7f178f3e"></image><text class="data-v-7f178f3e">{{content}}</text></view></view></view>
