@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-collapse": "/components/thorui/uni-collapse",
+    "uni-collapse-item": "/components/thorui/uni-collapse-item"
+  },
+  "component": true
+}

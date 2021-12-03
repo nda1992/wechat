@@ -26,9 +26,11 @@
 				<news />
 			</view>
 		</view>
-		<view class="draw">
-			<u-popup v-model="showDraw" width="450rpx">
-				<view>出淤泥而不染，濯清涟而不妖</view>
+		<view class="index-draw">
+			<u-popup v-model="showDraw" width="300rpx">
+				<view>
+					<popupItem :menuList="drawMenuList" @gotoPage="gotoPage" />
+				</view>
 			</u-popup>
 		</view>
 	</view>
@@ -39,11 +41,25 @@ import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
 import news from '@/components/news/news.vue'
 import index from '@/components/buttons/index.vue'
+<<<<<<< HEAD
 
 export default {
 	components:{
 		index,
 		news
+=======
+import popupItem from '@/components/popupItem/popupItem.vue'
+import tuiDrawer from "@/components/thorui/tui-drawer"
+export default {
+	components:{
+<<<<<<< HEAD
+		index,
+		popupItem
+=======
+		index
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
+>>>>>>> e59107ab24bb084c9c4e5bcf5c73ee5e59f86299
+>>>>>>> 9c9030bc06eb848c9bc5e7341df51c16916aca47
 	},
 	data() {
 		return {
@@ -69,7 +85,22 @@ export default {
 			menuLists: [],
 			content: [],
 			
+			itemList: [{
+				head: "赏识在于角度的转换",
+				body: "只要我们",
+				disabled: false
+			},{
+				head: "生活中不是缺少美",
+				body: "学会欣赏",
+				open: false,
+			},{
+				head: "周围一些不起眼的人",
+				body: "但是据说雕刻好",
+				open: false,
+			}],
+			
 			showDraw: false,
+			drawMenuList: [],
 			date: undefined,
 			week: undefined
 		}
@@ -80,6 +111,12 @@ export default {
 		this.getMenusList()
 	},
 	methods: {
+		change(e) {
+			console.log(e);
+		},
+		itemChange(e) {
+			console.log(e);
+		},
 		getSwiperImgs() {
 			const that = this
 			uni.request({
@@ -116,6 +153,7 @@ export default {
 				method: 'GET',
 				success(res) {
 					const { items } = res.data
+					that.drawMenuList = items
 					let temp = {}
 					// // 取icons和items的交集
 					const Itemstemp = []
@@ -154,6 +192,12 @@ export default {
 		gotoTargePage(obj) {
 			// 15个cube跳转到不同的页面
 			console.log(obj);
+		},
+		// 折叠面板subitem跳转到指定页面
+		gotoPage(obj) {
+			uni.navigateTo({
+				url: `targePage/index?category=${obj.name}`
+			})
 		}
 	}
 }

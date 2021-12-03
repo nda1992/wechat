@@ -1,0 +1,13 @@
+
+.uni-collapse.data-v-5b64e163 {
+
+	width: 100%;
+	display: flex;
+
+
+
+
+	flex-direction: column;
+	background-color: #ffffff;
+}
+
