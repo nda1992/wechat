@@ -1,10 +1,7 @@
 <template>
-<<<<<<< HEAD
 	<view>
 		<newsBox v-for="item in newsList" :key="item.id" :newsItem="item.item" />
-=======
 	<!-- 浏览新闻的组件 -->
-	<view>
 		<view class="news-main">
 			<view class="news-main-title">{{ item.title }}</view>
 			<view class="news-main-info">
@@ -16,12 +13,10 @@
 				<u-parse :html="item.content"></u-parse>
 			</view>
 		</view>
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 	</view>
 </template>
 
 <script>
-<<<<<<< HEAD
 import newsBox from '@/components/news/newsBox/index.vue'
 export default {
 	name:"news",
@@ -60,8 +55,6 @@ export default {
 </script>
 
 <style>
-
-=======
 	export default {
 		name:"news",
 		props: {
@@ -96,5 +89,4 @@ export default {
 			padding: 0 35rpx;
 		}
 	}
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 </style>

@@ -37,17 +37,13 @@
 <script>
 import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
-<<<<<<< HEAD
 import news from '@/components/news/news.vue'
-export default {
-	components: {
-		news
-=======
 import index from '@/components/buttons/index.vue'
+
 export default {
 	components:{
-		index
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
+		index,
+		news
 	},
 	data() {
 		return {
