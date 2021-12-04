@@ -4,9 +4,10 @@
     "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
     "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
     "u-divider": "/uview-ui/components/u-divider/u-divider",
-    "news": "/components/news/news",
     "u-popup": "/uview-ui/components/u-popup/u-popup",
     "popup-item": "/components/popupItem/popupItem",
-    "index": "/components/buttons/index"
+    "index": "/components/buttons/index",
+    "news-box": "/components/news/newsBox/index",
+    "newsdropdown": "/components/news/dropdown/index"
   }
 }

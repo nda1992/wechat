@@ -22,8 +22,14 @@
 				<index :menuLists="menuLists" @gotoTargePage="gotoTargePage" />
 			</view>
 			<u-divider :half-width='350' :margin-top="10" :margin-bottom="10">热点新闻</u-divider>
+			<view class="index-content-dropdown">
+				<newsdropdown />
+			</view>
 			<view class="index-content-news">
-				<news />
+				<newsBox v-for="item in newsList" :key="item.id" :newsItem="item" @getCardNewsById="getCardNewsById" />
+				<text class="loading-text">
+				{{loadingType === 0 ? contentText.contentdown : (loadingType === 1 ? contentText.contentrefresh : contentText.contentnomore)}}
+				</text>
 			</view>
 		</view>
 		<view class="index-draw">
@@ -39,24 +45,18 @@
 <script>
 import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
-<<<<<<< HEAD
 import news from '@/components/news/news.vue'
-export default {
-	components: {
-		news
-=======
 import index from '@/components/buttons/index.vue'
 import popupItem from '@/components/popupItem/popupItem.vue'
 import tuiDrawer from "@/components/thorui/tui-drawer"
+import newsBox from "@/components/news/newsBox/index.vue"
+import newsdropdown from '@/components/news/dropdown/index.vue'
 export default {
 	components:{
-<<<<<<< HEAD
 		index,
-		popupItem
-=======
-		index
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
->>>>>>> e59107ab24bb084c9c4e5bcf5c73ee5e59f86299
+		popupItem,
+		newsBox,
+		newsdropdown
 	},
 	data() {
 		return {
@@ -82,30 +82,65 @@ export default {
 			menuLists: [],
 			content: [],
 			
-			itemList: [{
-				head: "赏识在于角度的转换",
-				body: "只要我们",
-				disabled: false
-			},{
-				head: "生活中不是缺少美",
-				body: "学会欣赏",
-				open: false,
-			},{
-				head: "周围一些不起眼的人",
-				body: "但是据说雕刻好",
-				open: false,
-			}],
-			
 			showDraw: false,
 			drawMenuList: [],
 			date: undefined,
-			week: undefined
+			week: undefined,
+			// 加载更多的相关变量
+			contentText: {
+				pullRefreshStatus:false,//下拉刷新
+				contentdown: "上拉显示更多",
+				contentrefresh: "正在加载...",
+				contentnomore: "没有更多数据了"
+			},
+			loadingType: 0,
+			newsList: [],
+			// 每页条数
+			limit: 5,
+			// 总页数
+			page: 1,
+			// 总条数
+			total: 0,
+			// 总页数
+			countPage: 0
 		}
 	},
 	onLoad() {
 		this.getSwiperImgs()
 		this.getNow()
 		this.getMenusList()
+		this.getNewsList()
+	},
+	onReachBottom() {
+		
+		setTimeout(() => {
+			const that = this
+			that.page++
+			if (that.loadingType !== 0) {
+				return false
+			}
+			that.loadingType = 1
+			uni.showNavigationBarLoading()
+			uni.request({
+				url: 'http://localhost:3000/wechat/news/getnewsList',
+				data: { limit: that.limit, page: that.page, role: 'wechat' },
+				header: { token: 'token' },
+				success(res) {
+					const { items, total } = res.data
+					that.total = total
+					let tempCountPage
+					that.newsList = [...that.newsList, ...items]
+					// /没有数据
+					if (that.newsList.length === total) {
+						that.loadingType = 2
+						uni.hideNavigationBarLoading()
+						return
+					}
+					that.loadingType = 0
+					uni.hideNavigationBarLoading()
+				}
+			})
+		},2000)
 	},
 	methods: {
 		change(e) {
@@ -133,10 +168,17 @@ export default {
 			this.date = moment().format('YYYY年MM月DD日')
 			this.week = getWeek(moment().day())
 		},
+		// 点击swiper跳转到新闻浏览页面
 		getNewsById(index) {
 			const newsid = this.list[index].newsid
 			uni.navigateTo({
 				url: `swiper/scanNews/scanNews?newsid=${newsid}`
+			})
+		},
+		// 新闻卡片跳转到新闻浏览页面
+		getCardNewsById({id}) {
+			uni.navigateTo({
+				url: `swiper/scanNews/scanNews?newsid=${id}`
 			})
 		},
 		openListDraw() {
@@ -195,6 +237,20 @@ export default {
 			uni.navigateTo({
 				url: `targePage/index?category=${obj.name}`
 			})
+		},
+		// 获取新闻列表
+		getNewsList() {
+			const that = this
+			uni.request({
+				url: 'http://localhost:3000/wechat/news/getnewsList',
+				data: { limit: that.limit, page: that.page, role: 'wechat' },
+				header: { token: 'token' },
+				success(res) {
+					const { items, total } = res.data
+					that.total = total
+					that.newsList = items
+				}
+			})
 		}
 	}
 }
@@ -226,6 +282,21 @@ export default {
 			.index-content-header-time {
 				color: #999999;
 			}
+		}
+		.index-content-dropdown {
+			// display: flex;
+			// justify-content: flex-start;
+		}
+		.index-content-news {
+			.loading-text{
+					height: 80upx;
+					line-height: 80upx;
+					font-size: 26upx;
+					color:#ccc;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+				}
 		}
 	}
 }

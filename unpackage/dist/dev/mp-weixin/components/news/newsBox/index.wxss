@@ -24,16 +24,19 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-<<<<<<< HEAD:unpackage/dist/dev/mp-weixin/components/news/newsBox/index.wxss
+.newsbox.data-v-5473e8ba {
+  margin-bottom: 15rpx;
+}
 .newsbox .newsbox-body.data-v-5473e8ba {
   display: flex;
-  justify-content: space-between;
-=======
-.btn.data-v-1fda17a4 {
-  margin: 40rpx 0 50rpx 0;
-  display: flex;
-  justify-content: center;
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493:unpackage/dist/dev/mp-weixin/pages/index/swiper/scanNews/scanNews.wxss
+  justify-content: flex-start;
   align-items: center;
+}
+.newsbox .newsbox-body image.data-v-5473e8ba {
+  width: 120rpx;
+  flex: 0 0 120rpx;
+  height: 120rpx;
+  border-radius: 8rpx;
+  margin-right: 12rpx;
 }
 

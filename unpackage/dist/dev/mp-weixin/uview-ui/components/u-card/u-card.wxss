@@ -24,7 +24,6 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-<<<<<<< HEAD:unpackage/dist/dev/mp-weixin/uview-ui/components/u-card/u-card.wxss
 .u-card.data-v-d7b36b00 {
   position: relative;
   overflow: hidden;
@@ -58,24 +57,5 @@
 }
 .u-card__foot.data-v-d7b36b00 {
   color: #909399;
-=======
-.cube .cube-main .cube-main-children.data-v-7f178f3e {
-  font-size: 20rpx;
-  height: 130rpx;
-  width: 130rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: dashed #E4E7ED 0.5px;
-  border-radius: 9rpx;
-}
-.cube .cube-main .cube-main-children image.data-v-7f178f3e {
-  height: 50rpx;
-  width: 50rpx;
-}
-.cube .cube-main .cube-main-children text.data-v-7f178f3e {
-  margin-top: 8rpx;
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493:unpackage/dist/dev/mp-weixin/components/buttons/cube.wxss
 }
 

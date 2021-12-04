@@ -1,12 +1,10 @@
 <template>
-<<<<<<< HEAD
-	<view>
-		<newsBox v-for="item in newsList" :key="item.id" :newsItem="item.item" />
-=======
 	<!-- 浏览新闻的组件 -->
 	<view>
 		<view class="news-main">
-			<view class="news-main-title">{{ item.title }}</view>
+			<view class="news-main-title">
+				<text>{{ item.title }}</text>
+			</view>
 			<view class="news-main-info">
 				<text>发布时间:{{ item.createTime }}</text>
 				<text>来源:{{ item.deptName }}</text>
@@ -16,17 +14,19 @@
 				<u-parse :html="item.content"></u-parse>
 			</view>
 		</view>
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 	</view>
 </template>
 
 <script>
-<<<<<<< HEAD
-import newsBox from '@/components/news/newsBox/index.vue'
 export default {
 	name:"news",
-	components: {
-		newsBox
+	props: {
+		item: {
+			type: Object,
+			default: () => {
+				return {}
+			}
+		}
 	},
 	data() {
 		return {
@@ -36,43 +36,8 @@ export default {
 				role: 'admin'
 			}
 		}
-	},
-	onLoad() {
-		this.getnewsList()
-	},
-	methods: {
-		getnewsList() {
-			const that = this
-			uni.request({
-				url: 'http://localhost:3000/news/getnewsList',
-				method: 'GET',
-				header: {token: 'token'},
-				data: that.listQuery,
-				success(res) {
-					const { items, page } = res.data
-					console.log(items);
-					console.log(page); 
-				}
-			})
-		}
 	}
 }
-</script>
-
-<style>
-
-=======
-	export default {
-		name:"news",
-		props: {
-			item: {
-				type: Object,
-				default: () => {
-					return {}
-				}
-			}
-		}
-	}
 </script>
 
 <style lang="scss" scoped>
@@ -83,6 +48,9 @@ export default {
 			font-weight: bold;
 			padding: 0 10rpx;
 			margin: 20rpx 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		.news-main-info {
 			display: flex;
@@ -96,5 +64,4 @@ export default {
 			padding: 0 35rpx;
 		}
 	}
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
 </style>

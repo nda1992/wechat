@@ -24,16 +24,10 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-<<<<<<< HEAD:unpackage/dist/dev/mp-weixin/components/news/newsBox/index.wxss
-.newsbox .newsbox-body.data-v-5473e8ba {
-  display: flex;
-  justify-content: space-between;
-=======
 .btn.data-v-1fda17a4 {
   margin: 40rpx 0 50rpx 0;
   display: flex;
   justify-content: center;
->>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493:unpackage/dist/dev/mp-weixin/pages/index/swiper/scanNews/scanNews.wxss
   align-items: center;
 }
 
