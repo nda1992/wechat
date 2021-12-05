@@ -47,6 +47,16 @@ import moment from 'moment'
 import getWeek from '@/static/js/getWeek.js'
 import news from '@/components/news/news.vue'
 import index from '@/components/buttons/index.vue'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+export default {
+	components:{
+		index,
+		news
+=======
+>>>>>>> 027874b98899deb277d419feddb982fcdd94c32f
 import popupItem from '@/components/popupItem/popupItem.vue'
 import tuiDrawer from "@/components/thorui/tui-drawer"
 import newsBox from "@/components/news/newsBox/index.vue"
@@ -54,9 +64,18 @@ import newsdropdown from '@/components/news/dropdown/index.vue'
 export default {
 	components:{
 		index,
+<<<<<<< HEAD
 		popupItem,
 		newsBox,
 		newsdropdown
+=======
+		popupItem
+=======
+		index
+>>>>>>> f0d9e553d1004b3533e4033047b71c4ff9909493
+>>>>>>> e59107ab24bb084c9c4e5bcf5c73ee5e59f86299
+>>>>>>> 9c9030bc06eb848c9bc5e7341df51c16916aca47
+>>>>>>> 027874b98899deb277d419feddb982fcdd94c32f
 	},
 	data() {
 		return {
